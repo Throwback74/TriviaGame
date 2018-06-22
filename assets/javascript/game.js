@@ -1,4 +1,10 @@
+$(document).ready(function() {
+    $("#start").click(function() {
 
+
+
+
+    }),
         var wins = 0;
         var losses = 0;
         var myArrayIndex = 0;
@@ -7,12 +13,41 @@
         var myArray = {
             
             uselessTrivia: [
-            {
+            //Q1
+                {
+                answer: "C. Through their knees",
                 q: "1. How do crickets hear?",
+                options: [
+                    "A. Through their wings",
+                    "B. Through their belly",
+                    "C. Through their knees",
+                    "D. Through their tongue",
+                    ]
+                },
+                //Q2
+                {
+                answer: "A. Chicago",
+                q: "2. Which American city invented plastic vomit?",
+                options: [
+                    "A. Chicago",
+                    "B. Detroit",
+                    "C. Columbus",
+                    "D. Baltimore",
+                    ]
+                },
+                {
+                answer: "B. A car",
+                q: "3. In ʻBen Hurʼ, which modern thing can be seen during the chariot scene?",
+                options: [
+                    "A. A waitress",
+                    "B. A car",
+                    "C. A postbox",
+                    "D. A street lamp",
+                    ]
+                },
                 
-                
-            },
-            ]
+        
+            ],
             trueFalse: [
             {    
                 q: "Is the sky blue?",
@@ -113,4 +148,4 @@
 
 
             // }
-        // }
+});
