@@ -1,3 +1,13 @@
+body {
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    background-image: url("../images/ArtsyBackground.jpg");
+    background-size: 1000px 1000px;
+    color: white;
+    text-align: center;
+}
+
 #wrapper {
     text-align: center;
 }

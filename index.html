@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     
     <title>Trivia</title>
-    <a href='https://www.freepik.com/free-vector/abstract-music-poster-templates_2326413.htm'>Designed by Freepik</a>
+    <!-- <a href='https://www.freepik.com/free-vector/abstract-music-poster-templates_2326413.htm'>Designed by Freepik</a> -->
 </head>
 
 <body>
+<div id="container">
 <div id="wrapper">
     <h1>Question Game!</h1>
     <div id="timer">00:00</div>
@@ -22,7 +23,9 @@
         <button id="start" type="button">START!</button>
         <button id="submit" type="submit">Submit Quiz</button>
     </div>
-    <div class="formContainer">
+
+<!--This code is just the HTML version of the Quiz Form, I wrote it out this way first, and it is still useful for a reference since I have not yet finished everything and am completing the assignment in pseudocode-->
+    <!-- <div class="formContainer">
     <form id="Q1" action = "#" method="POST">
         <fieldset>
             <h3>Category: USELESS TRIVIA!</h3>
@@ -62,28 +65,83 @@
             </label>
         </fieldset>
     </form>
-    </div>
-    <div id="quiz">
-        
-            <div id="question"></div>
-    </div>
-                    <!-- <label class="radio-inline">
-                    <input type="radio" name="gender" value="other"> Other
-                </label> -->
-    
-    <div id="results">
+    </div> -->
 
-    </div>
 
-    
-    <p id="score"></p>
-    <p id="question"></p>
-    
-    
+    <div id="quizContainer">
+        <div id="categoryPicker">
+            <h2>Which Quiz Will You Try?</h2>
+            <button id="trueFQuiz" type="button">Take the True or False Quiz!</button>
+            <button id="UselessTrivia" type="button">Take the Useless Trivia Quiz!</button>
+        </div>
+            <!-- <div id="question"></div> -->
+            <div id="formContainerTF">
+                <form>
+                    <fieldset>
+                        <h3 id="categoryTF">True or False?</h3>
+                        <hr>
+                        <h4 id="questionTF"></h4>
+                        <br>
+                        <label class="multiChoice">
+                            <input type="radio" name="trueFalse" class="true" value="True" checked>TRUE<br>
+                        </label>
+                        <label class="multiChoice">
+                                <input type="radio" name="trueFalse" class="false" value="False"> FALSE<br>
+                        </label>
+                        <button id="next">Next Question</button>
+                    </fieldset>
+                </form>
+                <div id="submitButton">
+                        <button type="submit" value="Submit">Submit</button>
+                </div>
+            </div>
+            <div id="formContainerUT">
+                    <form>
+                        <fieldset>
+                            <h3 id="categoryUT">Useless Trivia!</h3>
+                            <hr>
+                            <h4 id="questionUT"></h4>
+                            <br>
+                            <label class="multiChoice">
+                                    <input type="radio" name="abcd" value="A" checked><br>
+                            </label>
+                            <label class="multiChoice">
+                                <input type="radio" name="abcd" value="B"> <br>
+                            </label>
+                            <label class="multiChoice">
+                                    <input type="radio" name="abcd" value="C"> <br>
+                            </label>
+                            <label class="multiChoice">
+                                <input type="radio" name="abcd" value="D"> 
+                            </label>
+                            <button id="next">Next Question</button>
+                        </fieldset>
+                    </form>
+                    <div id="submitButton">
+                            <button type="submit" value="Submit">Submit</button>
+                    </div>
+                </div>
+    </div>
+<!-- score is the percentage correct, TF = TrueFalse, UT = Useless Trivia-->
+    <div id="resultsContainer">
+        <div id="resultsTF">
+            <p id="categoryTF">True or False</p>
+            <p id="correctTF"></p>
+            <p id="incorrectTF"></p>
+            <p id="scoreTF"></p>
+        </div>
+        <div id="resultsUT">
+            <p id="categoryUT">Useless Trivia</p>
+            <p id="correctUT"></p>
+            <p id="incorrectUT"></p>
+            <p id="scoreUT"></p>
+        </div>
+    </div>    
+</div>
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script type="text/javascript" src="assets/game.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 
