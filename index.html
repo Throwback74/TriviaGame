@@ -5,19 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Trivia</title>
+
 </head>
 
 <body>
 <div id="wrapper">
     <h1>Question Game!</h1>
-
+    <div id="timer">00:00</div>
     <div id="buttons">
-        <button id="start">START!</button>
-        <button id="submit">Submit Quiz</button>
+        <button id="start" type="button">START!</button>
+        <button id="submit" type="submit">Submit Quiz</button>
     </div>
+    <div class="formContainer">
+    <form id="Q1" action = "#" method="POST">
+        <fieldset>
+            <h3>Category: USELESS TRIVIA!</h3>
+            <br>
+            <h4>How do crickets hear?</h4>
+            <br>
+            <label class="rad1">
+                <input type="radio" name="abcd" value="Through their wings" checked> Through their wings<br>
+            </label>
+            <label class="rad1">
+                <input type="radio" name="abcd" value=" Through their belly"> Through their belly<br>
+            </label>
+            <label class="rad1">
+                    <input type="radio" name="abcd" value="Through their knees"> Through their knees<br>
+            </label>
+            <label class="rad1">
+                <input type="radio" name="abcd" value="Through their tongue"> Through their tongue
+            </label>
+        </fieldset>
+    </form>
+    </div>
+    <br><br>
+    <hr>  
+    <br><br>
+    <div class="formContainer">
+    <form id="Q2" action = "#" method="POST">
+        <fieldset>
+            <h3>Category: TRUE OR FALSE?</h3>
+            <br>
+            <h4>Is the Sky Blue?</h4>
+            <br>
+            <label class="radio-inline">
+                <input type="radio" name="trueFalse" value="True" checked> TRUE<br>
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="trueFalse" value="False"> FALSE<br>
+            </label>
+        </fieldset>
+    </form>
+    </div>
+                    <!-- <label class="radio-inline">
+                    <input type="radio" name="gender" value="other"> Other
+                </label> -->
+    
     <div id="results">
-        
+
     </div>
 
     

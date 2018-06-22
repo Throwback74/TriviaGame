@@ -1,0 +1,11 @@
+#wrapper {
+    text-align: center;
+}
+
+#Q1 label {
+    display: inline-table;
+    text-align: center;
+}
+.formContainer {
+    text-align: center;
+}
